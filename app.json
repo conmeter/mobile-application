@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "conmeter",
+    "slug": "conmeter",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/app/logo.png",
+    "scheme": "myapp",
+    "splash": {
+      "image": "./assets/app/splash-screen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.conmeter.conmeter"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#000000",
+      "barStyle": "light-content"
+    },
+    "description": "conmeter"
+  }
+}
