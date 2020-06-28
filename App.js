@@ -16,7 +16,7 @@ import { loadUser } from './redux/actions/auth';
 import { Provider, useSelector } from 'react-redux';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://conmeter.com/';
+axios.defaults.baseURL = 'https://conmeter.herokuapp.com/';
 axios.defaults.timeout = 6000;
 
 

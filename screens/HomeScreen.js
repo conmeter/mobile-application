@@ -58,8 +58,9 @@ export default function HomeScreen(props) {
         <Text style={styles.today}>{day}</Text>
       </View>
     </View>
-    <View style={styles.notification_card}>
     { notifications? 
+    <View style={styles.notification_card}>
+    
         <View>
           <ListItem
             key={"notifications"}
@@ -80,9 +81,11 @@ export default function HomeScreen(props) {
           />
           ))}
           
-        </View>: <View/>
-      }
-    </View>
+        </View>
+      
+    </View>: <View/>
+}
+{tops["top_day"] || tops["top_week"] || tops["top_all_time"] ?
     <View style={styles.tops_card}>
     { tops["top_day"] ?
      
@@ -147,7 +150,8 @@ export default function HomeScreen(props) {
             </TouchableOpacity>
    </View>: <View/>
        }
-    </View>
+    </View>:<View/>
+}
     </ScrollView>
 <Loader />
 <Message />
